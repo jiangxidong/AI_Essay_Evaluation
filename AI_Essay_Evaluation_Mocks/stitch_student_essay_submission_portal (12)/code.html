@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EssayComprehend Feedback</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2563EB",
+              "background-light": "#F8F9FA",
+              "background-dark": "#101622",
+              "text-light": "#212529",
+              "text-dark": "#E5E7EB",
+              "ai-bg-light": "#F0F7FF"
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "8px",
+              "lg": "8px", 
+              "xl": "8px",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex flex-row min-h-screen">
+<!-- SideNavBar -->
+<aside class="w-64 bg-white dark:bg-background-dark border-r border-gray-200 dark:border-gray-800 flex-shrink-0">
+<div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 px-2">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold tracking-[-0.015em]">EssayComprehend</h2>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">dashboard</span>
+<p class="text-sm font-medium text-gray-700 dark:text-gray-300">Dashboard</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary font-bold">assignment_turned_in</span>
+<p class="text-sm font-bold text-primary">Submissions</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">group</span>
+<p class="text-sm font-medium text-gray-700 dark:text-gray-300">Students</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">bar_chart</span>
+<p class="text-sm font-medium text-gray-700 dark:text-gray-300">Analytics</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3 px-3 py-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Profile picture of Dr. Eleanor Vance" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBt15kEDiykmEyUwAcJiuwmxorDj5k36ajwTEM_-_U-fKi71CSnPMacFJRRS4TFjrVZZl920pIiNWmiErqOSM76bQ9_OKg-Hbmatf8yvN-9tAedbcSDp2x7bcZfcHes-2DT52Igt3y_HjtR4-LIBGQbBTkrCVx-R18BndOZ0hyGD-x3GF0_ZHE47d1AUkQtrgpdt3vTRi3S2f5eD2I6hVZSbDRAFx1sVL5cpCGTDkiI9A8HnByZFzn9VDM28oRETx0S-06YLesLgXEP");'></div>
+<div class="flex flex-col">
+<h1 class="text-sm font-medium">Dr. Eleanor Vance</h1>
+<p class="text-xs text-gray-500 dark:text-gray-400">Professor of Literature</p>
+</div>
+</div>
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">settings</span>
+<p class="text-sm font-medium text-gray-700 dark:text-gray-300">Settings</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">help</span>
+<p class="text-sm font-medium text-gray-700 dark:text-gray-300">Help</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar / Actions Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-800 px-10 py-4 bg-white dark:bg-background-dark sticky top-0 z-10">
+<div class="flex-1"></div>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-100 dark:bg-gray-800 text-text-light dark:text-text-dark text-sm font-medium leading-normal tracking-[0.015em]">
+<span class="truncate">Save as Draft</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-medium leading-normal tracking-[0.015em]">
+<span class="truncate">Submit Feedback</span>
+</button>
+</div>
+</header>
+<div class="px-10 py-8">
+<div class="layout-content-container flex flex-col w-full mx-auto">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 mb-8">
+<div class="flex min-w-72 flex-col gap-2">
+<p class="text-3xl font-bold tracking-tight">Feedback for John Doe - Thematic Analysis of 'The Great Gatsby'</p>
+<p class="text-base font-normal text-gray-500 dark:text-gray-400">Review the AI-generated draft and add your final comments before submission.</p>
+</div>
+</div>
+<!-- Main two-section layout -->
+<div class="flex flex-col h-[calc(100vh-220px)]">
+<!-- Top Section: AI Feedback -->
+<div class="flex-grow-[6] flex flex-col relative border border-gray-200 dark:border-gray-700 rounded-lg">
+<div class="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 p-3">
+<div class="flex items-center gap-4">
+<div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded bg-blue-100 dark:bg-primary/20 px-3">
+<p class="text-primary dark:text-blue-200 text-xs font-medium uppercase tracking-wider">AI Draft</p>
+</div>
+<h3 class="text-base font-medium">AI-Generated Feedback</h3>
+</div>
+<div class="flex items-center gap-2 text-gray-500 dark:text-gray-400">
+<button class="p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800"><span class="material-symbols-outlined text-base">format_bold</span></button>
+<button class="p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800"><span class="material-symbols-outlined text-base">format_italic</span></button>
+<button class="p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800"><span class="material-symbols-outlined text-base">format_list_bulleted</span></button>
+<button class="p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800"><span class="material-symbols-outlined text-base">format_list_numbered</span></button>
+</div>
+</div>
+<div class="flex-1 p-4 bg-ai-bg-light dark:bg-primary/5 overflow-y-auto">
+<textarea class="w-full h-full p-2 bg-transparent border-0 resize-none focus:ring-0 text-sm leading-relaxed text-text-light dark:text-text-dark placeholder:text-gray-400 dark:placeholder:text-gray-500">John, this is a strong initial analysis of the thematic elements in 'The Great Gatsby'. Your exploration of the American Dream's corruption is well-argued, particularly in your discussion of Gatsby's unattainable desires. You've correctly identified key symbols like the green light and the eyes of Dr. T.J. Eckleburg.
+
+To elevate this essay, consider delving deeper into the contrast between 'old money' (the Buchanans) and 'new money' (Gatsby). How does this social divide reinforce the novel's central themes? Furthermore, expanding on Daisy's role as both an object of desire and a symbol of the dream's emptiness would add significant depth. Your conclusion could be strengthened by summarizing these points more forcefully. Overall, a commendable effort that shows a clear understanding of the text.</textarea>
+</div>
+<div class="border-t border-gray-200 dark:border-gray-700 p-2 text-right">
+<p class="text-xs text-gray-500 dark:text-gray-400">340 / 800</p>
+</div>
+</div>
+<!-- Vertical Divider -->
+<div class="h-8 w-full flex items-center justify-center my-4">
+<div class="w-px h-full bg-transparent"></div>
+<div class="flex-1 border-t border-dashed border-gray-300 dark:border-gray-700"></div>
+<span class="text-xs uppercase text-gray-400 dark:text-gray-500 px-4 font-medium tracking-wider">Your Input</span>
+<div class="flex-1 border-t border-dashed border-gray-300 dark:border-gray-700"></div>
+</div>
+<!-- Bottom Section: Professor's Comments -->
+<div class="flex-grow-[4] flex flex-col border border-gray-200 dark:border-gray-700 rounded-lg">
+<div class="border-b border-gray-200 dark:border-gray-700 p-3">
+<h3 class="text-base font-medium">Your Additional Comments</h3>
+</div>
+<div class="flex-1 p-4 bg-white dark:bg-background-dark/50 overflow-y-auto">
+<textarea class="w-full h-full p-2 bg-transparent border-0 resize-none focus:ring-0 text-sm leading-relaxed text-text-light dark:text-text-dark placeholder:text-gray-400 dark:placeholder:text-gray-500" placeholder="Add your personal notes or final comments here..."></textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

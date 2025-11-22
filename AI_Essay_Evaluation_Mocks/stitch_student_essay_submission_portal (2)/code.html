@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Veritas Academic - Interview Question</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2563EB",
+              "background-light": "#F8F9FA",
+              "background-dark": "#111621",
+              "primary-text": "#212529",
+              "secondary-text": "#6C757D"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+                "DEFAULT": "8px",
+                "lg": "8px",
+                "xl": "8px",
+                "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7ebf3] dark:border-b-gray-700 px-10 py-3">
+<div class="flex items-center gap-4 text-primary-text dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Veritas Academic</h2>
+</div>
+<div class="flex flex-1 justify-end gap-4">
+<div class="flex gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-200/50 dark:bg-gray-700/50 text-primary-text dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">notifications</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-200/50 dark:bg-gray-700/50 text-primary-text dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">chat_bubble</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFk9faD7CKmpRxVsBsBpu1syDnRL5pJSq2i-GXTEzeJwXb9f7LUAGqfkSZooCB_jyqKVh1olEX1ozS5f-u6QClNsClPdbTQvepu2INAbasN9SuAu8-t7oAGjz8TGSyDMS8jkSY-q8CCUTfClsObkfJBublW0AkSZQe_tV8zMOFm8DKp4Td3JSREEhqshuvGXhBrLNOjd5W_B2BArbvh4XxXgmRX23UdVir7_pks4XuXcxvukLwlRUECVsTYml0FBePGh3O_7IyhWl-");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-5 px-4">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 items-center justify-center gap-8">
+<!-- Question Card -->
+<div class="p-4 w-full max-w-3xl">
+<div class="flex flex-col items-stretch justify-start rounded-lg bg-white dark:bg-gray-800 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-none p-8">
+<p class="text-secondary-text dark:text-gray-400 text-sm font-normal leading-normal mb-4">Question 1 of 5</p>
+<p class="text-primary-text dark:text-white text-xl font-medium leading-tight">
+                                Can you describe a challenging academic project you worked on and explain how you overcame the obstacles you faced?
+                            </p>
+</div>
+</div>
+<!-- Timer -->
+<p class="text-secondary-text dark:text-gray-400 text-base font-normal leading-normal text-center">60 seconds remaining</p>
+<!-- Record Button -->
+<div class="flex justify-center overflow-hidden p-5">
+<button class="flex size-20 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/30 hover:bg-blue-700 active:scale-95 transition-transform">
+<span class="material-symbols-outlined !text-4xl">mic</span>
+</button>
+</div>
+<!-- Pagination/Progress -->
+<div class="flex items-center justify-center p-4 gap-3">
+<a class="size-3 rounded-full bg-primary" href="#"></a>
+<a class="size-3 rounded-full bg-gray-300 dark:bg-gray-600" href="#"></a>
+<a class="size-3 rounded-full bg-gray-300 dark:bg-gray-600" href="#"></a>
+<a class="size-3 rounded-full bg-gray-300 dark:bg-gray-600" href="#"></a>
+<a class="size-3 rounded-full bg-gray-300 dark:bg-gray-600" href="#"></a>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

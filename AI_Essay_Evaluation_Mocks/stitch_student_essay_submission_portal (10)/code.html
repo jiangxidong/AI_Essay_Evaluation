@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academic Assessment Platform</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2563EB",
+              "background-light": "#F8F9FA",
+            },
+            fontFamily: {
+              display: ["Lexend", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "8px",
+              lg: "8px",
+              xl: "8px",
+              full: "9999px"
+            },
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light">
+<div class="relative flex min-h-screen w-full">
+<!-- SideNavBar -->
+<aside class="flex flex-col w-64 bg-white border-r border-[#E2E8F0] p-4 justify-between">
+<div class="flex flex-col gap-8">
+<div class="flex items-center gap-3 px-2">
+<div class="bg-primary flex items-center justify-center rounded-lg size-8 text-white">
+<span class="material-symbols-outlined text-xl">school</span>
+</div>
+<h1 class="text-[#334155] text-lg font-bold">AcademiaGrade</h1>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-[#64748B]">dashboard</span>
+<p class="text-[#64748B] text-sm font-medium">Dashboard</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-[#64748B]">groups</span>
+<p class="text-[#64748B] text-sm font-medium">Students</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">assignment</span>
+<p class="text-primary text-sm font-bold">Assessments</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-[#64748B]">bar_chart</span>
+<p class="text-[#64748B] text-sm font-medium">Analytics</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold">
+<span class="truncate">New Assessment</span>
+</button>
+<div class="flex flex-col gap-1 mt-4">
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-[#64748B]">settings</span>
+<p class="text-[#64748B] text-sm font-medium">Settings</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-[#64748B]">help</span>
+<p class="text-[#64748B] text-sm font-medium">Help &amp; Support</p>
+</div>
+<div class="flex gap-3 mt-4 border-t border-[#E2E8F0] pt-4 px-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Profile picture of Dr. Eleanor Vance" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7V7i1CH5AMIXVqVOoir9VwKrelKW-qopP7onQ2_FbTKiQLATRE8r3Tw16Ila912QTRSvw4ZFfd0Z9Aun5k-VqsGCnJaF29ylVPs3aW5RiaVLq4FAq0jOAd9jAWX-Ovsjhw8pD8Wjd_AuLrijH1L2lAnNWwp6pbE0LwQl6F9rEq5cYjLBBribOunBnCqtTrNl7vMnCDZy30AkwxVVheQ2SgdvMKnFu8G9gELva02lnwUUw9GlbWWgYwE8MS_cPKssUkcEobUzkSBxO");'></div>
+<div class="flex flex-col">
+<h1 class="text-[#334155] text-sm font-medium">Dr. Eleanor Vance</h1>
+<p class="text-[#64748B] text-xs">Professor of History</p>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 p-8">
+<div class="max-w-4xl mx-auto">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap items-center gap-2 mb-6">
+<a class="text-[#64748B] text-sm font-medium" href="#">Assessments</a>
+<span class="text-[#64748B] text-sm font-medium">/</span>
+<a class="text-[#64748B] text-sm font-medium" href="#">History 101 Essays</a>
+<span class="text-[#64748B] text-sm font-medium">/</span>
+<span class="text-[#334155] text-sm font-medium">John Doe</span>
+</div>
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between items-center gap-4 mb-8">
+<div class="flex flex-col gap-1">
+<p class="text-[#334155] text-3xl font-bold">John Doe - Essay Comprehension Review</p>
+<p class="text-[#64748B] text-base font-normal">History 101: The Renaissance Period</p>
+</div>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white text-[#334155] text-sm font-bold border border-[#E2E8F0]">
+<span class="truncate">Add General Feedback</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold">
+<span class="truncate">Submit Final Grade</span>
+</button>
+</div>
+</div>
+<!-- Stats -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+<div class="flex flex-col gap-2 rounded-lg p-6 border border-[#E2E8F0] bg-white">
+<p class="text-[#334155] text-base font-medium">Overall Score</p>
+<div class="flex items-baseline gap-2">
+<p class="text-[#334155] text-3xl font-bold">82%</p>
+<p class="text-green-600 text-sm font-medium">+5%</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 rounded-lg p-6 border border-[#E2E8F0] bg-white">
+<p class="text-[#334155] text-base font-medium">Comprehension</p>
+<div class="flex items-baseline gap-2">
+<p class="text-[#334155] text-3xl font-bold">A-</p>
+<p class="text-green-600 text-sm font-medium">+2%</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 rounded-lg p-6 border border-[#E2E8F0] bg-white">
+<p class="text-[#334155] text-base font-medium">Clarity</p>
+<div class="flex items-baseline gap-2">
+<p class="text-[#334155] text-3xl font-bold">B+</p>
+<p class="text-red-600 text-sm font-medium">-1%</p>
+</div>
+</div>
+</div>
+<!-- Q&A List -->
+<div class="flex flex-col gap-6">
+<!-- Q&A Card 1 -->
+<div class="flex gap-4 bg-white p-5 rounded-lg border border-[#E2E8F0] items-start">
+<div class="flex items-start gap-4 flex-1">
+<div class="flex-shrink-0 bg-primary text-white size-8 rounded-full flex items-center justify-center text-sm font-bold">Q1</div>
+<div class="flex flex-col gap-4">
+<p class="text-[#334155] text-lg font-medium">Analyze the primary factors that led to the decline of the feudal system in Europe.</p>
+<div class="pl-4 border-l-4 border-[#BFDBFE]">
+<p class="text-[#64748B] text-base font-normal italic">The decline of the feudal system was a multifaceted process driven by economic shifts, such as the growth of a market economy and the rise of towns, which offered peasants alternative livelihoods. The Black Death also played a crucial role by drastically reducing the population, thereby increasing the value of labor and giving serfs more bargaining power. Furthermore, the consolidation of monarchical power and the development of professional armies reduced the military necessity of feudal lords.</p>
+</div>
+</div>
+</div>
+<div class="shrink-0">
+<p class="text-green-600 text-xl font-bold">16/20</p>
+</div>
+</div>
+<!-- Q&A Card 2 -->
+<div class="flex gap-4 bg-white p-5 rounded-lg border border-[#E2E8F0] items-start">
+<div class="flex items-start gap-4 flex-1">
+<div class="flex-shrink-0 bg-primary text-white size-8 rounded-full flex items-center justify-center text-sm font-bold">Q2</div>
+<div class="flex flex-col gap-4">
+<p class="text-[#334155] text-lg font-medium">Discuss the impact of the printing press on the Renaissance and the Protestant Reformation.</p>
+<div class="pl-4 border-l-4 border-[#BFDBFE]">
+<p class="text-[#64748B] text-base font-normal italic">Gutenberg's printing press revolutionized communication, enabling the rapid dissemination of ideas. During the Renaissance, it facilitated the spread of classical texts and humanist thought. For the Reformation, it was indispensable; Martin Luther's Ninety-five Theses and other works were printed and distributed widely, challenging the Catholic Church's authority and allowing reformist ideas to reach a mass audience, which would have been impossible previously.</p>
+</div>
+</div>
+</div>
+<div class="shrink-0">
+<p class="text-green-600 text-xl font-bold">18/20</p>
+</div>
+</div>
+<!-- Q&A Card 3 -->
+<div class="flex gap-4 bg-white p-5 rounded-lg border border-[#E2E8F0] items-start">
+<div class="flex items-start gap-4 flex-1">
+<div class="flex-shrink-0 bg-primary text-white size-8 rounded-full flex items-center justify-center text-sm font-bold">Q3</div>
+<div class="flex flex-col gap-4">
+<p class="text-[#334155] text-lg font-medium">Explain the concept of 'mercantilism' and its role in European colonization.</p>
+<div class="pl-4 border-l-4 border-[#BFDBFE]">
+<p class="text-[#64748B] text-base font-normal italic">Mercantilism was an economic theory that a nation's wealth was measured by its holdings of gold and silver. This led to policies aimed at maximizing exports and minimizing imports. Colonies played a critical role by providing raw materials to the mother country and serving as captive markets for its manufactured goods. This system created a flow of wealth from the colonies to Europe, driving the expansion of colonial empires and leading to frequent conflicts between rival European powers.</p>
+</div>
+</div>
+</div>
+<div class="shrink-0">
+<p class="text-orange-500 text-xl font-bold">13/20</p>
+</div>
+</div>
+<!-- Q&A Card 4 -->
+<div class="flex gap-4 bg-white p-5 rounded-lg border border-[#E2E8F0] items-start">
+<div class="flex items-start gap-4 flex-1">
+<div class="flex-shrink-0 bg-primary text-white size-8 rounded-full flex items-center justify-center text-sm font-bold">Q4</div>
+<div class="flex flex-col gap-4">
+<p class="text-[#334155] text-lg font-medium">Describe the main artistic innovations of the High Renaissance, citing at least two key artists.</p>
+<div class="pl-4 border-l-4 border-[#BFDBFE]">
+<p class="text-[#64748B] text-base font-normal italic">The High Renaissance saw artists achieve a new level of realism and emotional depth. Key innovations included the mastery of perspective, the use of sfumato (smoky, soft outlines) by Leonardo da Vinci to create lifelike figures in works like the "Mona Lisa," and the powerful, dynamic anatomy seen in Michelangelo's sculptures, such as his "David." These techniques created a sense of harmony, proportion, and idealized naturalism that defined the period's art.</p>
+</div>
+</div>
+</div>
+<div class="shrink-0">
+<p class="text-red-600 text-xl font-bold">10/20</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

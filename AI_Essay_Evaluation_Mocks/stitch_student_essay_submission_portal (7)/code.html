@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Professor Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2563EB",
+                        "secondary": "#F97316",
+                        "background-light": "#F8F9FA",
+                        "surface": "#FFFFFF",
+                        "text-primary": "#111827",
+                        "text-secondary": "#6B7280",
+                    },
+                    borderRadius: {
+                        "DEFAULT": "8px",
+                        "lg": "8px",
+                        "xl": "8px",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light text-text-primary">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<header class="w-full bg-surface border-b border-gray-200">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 h-20">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+<h1 class="text-xl font-bold tracking-tight text-text-primary">Assessment Platform</h1>
+</div>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium text-primary" href="#">Dashboard</a>
+<a class="text-sm font-medium text-text-secondary transition-colors hover:text-primary" href="#">Assignments</a>
+<a class="text-sm font-medium text-text-secondary transition-colors hover:text-primary" href="#">Settings</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-background-light text-text-secondary transition-colors hover:bg-gray-200">
+<span class="material-symbols-outlined text-xl">notifications</span>
+</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-background-light text-text-secondary transition-colors hover:bg-gray-200">
+<span class="material-symbols-outlined text-xl">help</span>
+</button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center" data-alt="Profile picture of a professor" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDCXNQgGXjxVNxyd1WW3l7ZmI_7SVKZ0Tj90OX1Aqh8YYdwVIvq4EsPJtVTY3XKjHU2lrNUoazvPeQoK4EtFukueRgQX_BQIZL2R_DuaBfbbqUqHCETIDRfO9yNVQQtWRDCJdmJ3G4oSs6W77Zv5roEapt42dLGcFZdVnTkQ56-_x1kA1EXpCBUuEwzmY4LDcag7JC6lVlBV11l68ncMVq34-Ko80Dvzoqrp9WKL2x2ok-OljGm0i1QVodJ5oJ8gUpKCEd1quuANANw')"></div>
+</div>
+</div>
+</header>
+<main class="w-full flex-1">
+<div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+<div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-200 pb-6">
+<div class="flex flex-col gap-1">
+<h2 class="text-3xl font-bold leading-tight tracking-tight text-text-primary">Welcome back, Professor Evans</h2>
+<p class="text-base font-normal text-text-secondary">Tuesday, October 24, 2023</p>
+</div>
+<button class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-primary/90">
+<span class="material-symbols-outlined text-xl">add</span>
+                        New Assignment
+                    </button>
+</div>
+<div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+<div class="flex flex-col gap-4 rounded-lg border border-gray-200 bg-surface p-6 shadow-sm">
+<div>
+<p class="text-sm font-normal text-text-secondary">ENG-101</p>
+<h3 class="text-lg font-medium text-text-primary">Analysis of Modernist Literature</h3>
+</div>
+<div class="flex items-baseline gap-2">
+<p class="text-3xl font-bold text-primary">23</p>
+<p class="text-base font-medium text-text-secondary">/ 25 Submitted</p>
+</div>
+<div>
+<span class="inline-flex items-center gap-1.5 rounded-full bg-secondary/10 px-3 py-1 text-sm font-medium text-secondary">
+<span class="size-2 rounded-full bg-secondary"></span>
+                                5 Pending Review
+                            </span>
+</div>
+<div class="mt-2 border-t border-gray-200 pt-4">
+<button class="w-full rounded-lg border-2 border-primary py-2 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-white">View Details</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg border border-gray-200 bg-surface p-6 shadow-sm">
+<div>
+<p class="text-sm font-normal text-text-secondary">LIT-202</p>
+<h3 class="text-lg font-medium text-text-primary">Shakespearean Sonnets Essay</h3>
+</div>
+<div class="flex items-baseline gap-2">
+<p class="text-3xl font-bold text-primary">18</p>
+<p class="text-base font-medium text-text-secondary">/ 20 Submitted</p>
+</div>
+<div>
+<span class="inline-flex items-center gap-1.5 rounded-full bg-secondary/10 px-3 py-1 text-sm font-medium text-secondary">
+<span class="size-2 rounded-full bg-secondary"></span>
+                                2 Pending Review
+                            </span>
+</div>
+<div class="mt-2 border-t border-gray-200 pt-4">
+<button class="w-full rounded-lg border-2 border-primary py-2 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-white">View Details</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg border border-gray-200 bg-surface p-6 shadow-sm">
+<div>
+<p class="text-sm font-normal text-text-secondary">ENG-101</p>
+<h3 class="text-lg font-medium text-text-primary">The Great Gatsby: Critical Review</h3>
+</div>
+<div class="flex items-baseline gap-2">
+<p class="text-3xl font-bold text-primary">25</p>
+<p class="text-base font-medium text-text-secondary">/ 25 Submitted</p>
+</div>
+<div>
+<span class="inline-flex items-center gap-1.5 rounded-full bg-green-500/10 px-3 py-1 text-sm font-medium text-green-600">
+<span class="size-2 rounded-full bg-green-500"></span>
+                                All Graded
+                            </span>
+</div>
+<div class="mt-2 border-t border-gray-200 pt-4">
+<button class="w-full rounded-lg border-2 border-primary py-2 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-white">View Details</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg border border-gray-200 bg-surface p-6 shadow-sm">
+<div>
+<p class="text-sm font-normal text-text-secondary">LIT-305</p>
+<h3 class="text-lg font-medium text-text-primary">Post-Colonial Theory Paper</h3>
+</div>
+<div class="flex items-baseline gap-2">
+<p class="text-3xl font-bold text-primary">15</p>
+<p class="text-base font-medium text-text-secondary">/ 22 Submitted</p>
+</div>
+<div>
+<span class="inline-flex items-center gap-1.5 rounded-full bg-secondary/10 px-3 py-1 text-sm font-medium text-secondary">
+<span class="size-2 rounded-full bg-secondary"></span>
+                                7 Pending Review
+                            </span>
+</div>
+<div class="mt-2 border-t border-gray-200 pt-4">
+<button class="w-full rounded-lg border-2 border-primary py-2 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-white">View Details</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

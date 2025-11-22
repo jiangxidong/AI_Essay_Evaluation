@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Student Review Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2563EB",
+              "background-light": "#F1F5F9",
+              "sidebar-light": "#F9FAFB",
+              "content-light": "#FFFFFF",
+              "text-primary": "#111827",
+              "text-secondary": "#6B7280",
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "8px",
+              "lg": "8px",
+              "xl": "8px",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light font-display">
+<div class="flex min-h-screen">
+<!-- Left Sidebar (40%) -->
+<aside class="fixed top-0 left-0 h-full w-[40%] max-w-md bg-sidebar-light p-8 flex flex-col gap-8">
+<!-- Student Info Card -->
+<div class="flex w-full flex-col items-center gap-4 rounded-lg bg-content-light p-6 shadow-sm">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-24" data-alt="Student avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIwoid1ykF6SFYYd83L04ACFzx2NUvHnv-TXx-0vATtlGHSwxJgUc3NZarr_4OgAigeWx0qvHXRu7UYBNTzknIRDmBlICCOPQsWOl3Zr8VRJh34DdpmFTwNlRpnQOQc419M3zP9kt4r1geNlaCIM1Q4uVsvDJheZOgVJwpDvsD9bzurVb1wCFAec5wNb24KxZ-00OECRHNGu2VSuNTOgc-m7-KH8ZgCOzw0vBqQzIRRGdM8EAPrSrERctiIj_aNAYlDvVp2im4kwBY");'></div>
+<div class="flex flex-col items-center justify-center text-center">
+<p class="text-text-primary text-xl font-medium leading-tight">Hermione Granger</p>
+<p class="text-text-secondary text-sm font-normal leading-normal mt-1">Advanced Potion-Making</p>
+<div class="flex items-center gap-2 mt-2 text-text-secondary">
+<span class="material-symbols-outlined text-base">calendar_today</span>
+<p class="text-sm font-normal leading-normal">Submitted: 15 Oct 2023</p>
+</div>
+</div>
+</div>
+<!-- Score Display Card -->
+<div class="flex flex-col items-center gap-4 rounded-lg bg-content-light p-6 shadow-sm">
+<p class="text-text-primary text-base font-medium leading-normal">AI Assessment Score</p>
+<div class="relative flex size-32 items-center justify-center">
+<svg class="absolute inset-0 size-full" viewbox="0 0 36 36">
+<path class="stroke-slate-200" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3"></path>
+<path class="stroke-primary" d="M18 2.0845
+                                 a 15.9155 15.9155 0 0 1 0 31.831
+                                 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<div class="flex flex-col items-center">
+<span class="text-4xl font-bold text-primary">88</span>
+<span class="text-sm text-text-secondary">/ 100</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content (60%) -->
+<main class="ml-[40%] w-[60%] bg-content-light p-8">
+<div class="flex h-full w-full flex-col">
+<!-- Tabs -->
+<div class="pb-3">
+<div class="flex border-b border-slate-200 gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary pb-3 pt-1" href="#">
+<p class="text-text-primary text-sm font-medium leading-normal">Interview Transcript</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary pb-3 pt-1" href="#">
+<p class="text-sm font-medium leading-normal">Original Essay</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary pb-3 pt-1" href="#">
+<p class="text-sm font-medium leading-normal">Feedback Editor</p>
+</a>
+</div>
+</div>
+<!-- Content Pane -->
+<div class="flex-grow pt-6">
+<div class="space-y-6 text-text-primary">
+<div class="space-y-2">
+<p class="text-sm font-medium text-text-secondary">AI Interviewer</p>
+<div class="rounded-lg bg-slate-100 p-4">
+<p class="text-base leading-relaxed">Good morning, Hermione. Thank you for submitting your essay on the properties of moonstone. Let's begin. Can you elaborate on your primary argument regarding its use in calming draughts?</p>
+</div>
+</div>
+<div class="space-y-2">
+<p class="text-sm font-medium text-text-secondary text-right">Hermione Granger</p>
+<div class="rounded-lg bg-primary/10 p-4">
+<p class="text-base leading-relaxed">Of course. My central thesis is that the calming properties of moonstone are not solely magical, but are amplified by its chemical composition, specifically its silicate structure. This structure interacts with potion ingredients like syrup of hellebore at a molecular level to stabilize the volatile compounds, resulting in a more potent and longer-lasting calming effect than previously documented in texts like 'Magical Drafts and Potions'.</p>
+</div>
+</div>
+<div class="space-y-2">
+<p class="text-sm font-medium text-text-secondary">AI Interviewer</p>
+<div class="rounded-lg bg-slate-100 p-4">
+<p class="text-base leading-relaxed">That's a fascinating point. Your essay mentions Gringott's 1742 study. How does your research challenge or build upon those findings?</p>
+</div>
+</div>
+<div class="space-y-2">
+<p class="text-sm font-medium text-text-secondary text-right">Hermione Granger</p>
+<div class="rounded-lg bg-primary/10 p-4">
+<p class="text-base leading-relaxed">The 1742 study correctly identified moonstone's efficacy but attributed it purely to its lunar affinity. My research builds upon that by providing a scientific framework. While the lunar cycle does influence its magical potency, I argue that the base efficacy is rooted in its physical properties. It's an instance where Muggle science—or what we would call alchemy's physical principles—can explain a magical phenomenon, suggesting a greater overlap than wizarding tradition often acknowledges.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="mt-auto pt-8 flex justify-end gap-4">
+<button class="rounded-lg bg-slate-200 px-5 py-2.5 text-sm font-medium text-text-primary">Save Feedback</button>
+<button class="rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-white">Submit Grade</button>
+</div>
+</div>
+</main>
+</div>
+</body></html>

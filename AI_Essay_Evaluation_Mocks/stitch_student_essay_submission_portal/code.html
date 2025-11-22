@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VeritasCheck - Essay Submission</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2563EB",
+              "background-light": "#F8F9FA",
+              "background-dark": "#111621",
+              "text-light-primary": "#212529",
+              "text-dark-primary": "#f8f9fa",
+              "text-light-secondary": "#6C757D",
+              "text-dark-secondary": "#adb5bd",
+              "border-light": "#DEE2E6",
+              "border-dark": "#343a40",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+                "DEFAULT": "8px", 
+                "lg": "8px",
+                "xl": "8px",
+                "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            @apply font-display;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- TopNavBar -->
+<header class="w-full border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark/50">
+<div class="container mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 2a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 0110 2zM5.03 3.59a.75.75 0 01.94-.428l1.323.764a.75.75 0 01-.52 1.322l-1.323-.764a.75.75 0 01-.428-.94zM14.97 3.59a.75.75 0 00-.94-.428l-1.323.764a.75.75 0 00.52 1.322l1.323-.764a.75.75 0 00.428-.94zM10 15a4 4 0 100-8 4 4 0 000 8zm0 1.5a5.5 5.5 0 110-11 5.5 5.5 0 010 11zM18 10a.75.75 0 01-.75-.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0118 10zM3.75 9.25a.75.75 0 010 1.5h-1.5a.75.75 0 010-1.5h1.5zM14.03 15.47a.75.75 0 01.94.428l.764 1.323a.75.75 0 11-1.322.52l-.764-1.323a.75.75 0 01.428-.94zM5.97 15.47a.75.75 0 00-.94.428l-.764 1.323a.75.75 0 101.322.52l.764-1.323a.75.75 0 00-.428-.94z"></path>
+</svg>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-text-light-primary dark:text-text-dark-primary">VeritasCheck</h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-sm font-medium text-text-light-primary dark:text-text-dark-primary">Jane Doe</span>
+<div class="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm">JD</div>
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex flex-1 items-center justify-center py-10 px-4">
+<div class="w-full max-w-2xl">
+<!-- EmptyState / Upload Zone -->
+<div class="flex flex-col items-center gap-6 rounded-lg border-2 border-dashed border-border-light dark:border-border-dark/50 bg-white dark:bg-background-dark/50 px-6 py-14 text-center transition-all hover:border-primary/50 hover:bg-primary/5">
+<div class="flex flex-col items-center gap-4">
+<span aria-hidden="true" class="material-symbols-outlined text-5xl text-primary">
+                            upload_file
+                        </span>
+<div class="flex flex-col items-center gap-2">
+<h2 class="text-2xl font-medium text-text-light-primary dark:text-text-dark-primary">Drag &amp; Drop Your Essay Here</h2>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">or click the button below to browse files</p>
+</div>
+</div>
+<button class="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-6 text-base font-medium text-white shadow-sm transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark">
+<span class="truncate">Upload Essay</span>
+</button>
+<p class="text-xs text-text-light-secondary dark:text-text-dark-secondary">Supported formats: .txt, .docx, .pdf. Maximum file size: 10MB</p>
+</div>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Feedback Pending Review</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2563EB",
+                        "background-light": "#F8F9FA",
+                        "background-dark": "#111827", /* Darker equivalent for academic theme */
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#1F2937",
+                        "heading-light": "#1F2937",
+                        "heading-dark": "#F9FAFB",
+                        "body-light": "#6B7280",
+                        "body-dark": "#D1D5DB",
+                        "icon-light": "#93C5FD",
+                        "icon-dark": "#60A5FA",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "8px",
+                        "lg": "8px",
+                        "xl": "8px",
+                        "full": "9999px"
+                    },
+                    animation: {
+                        pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        pulse: {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: .5 },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root" style="background-image: radial-gradient(circle at center, #EFF6FF, #F8F9FA);">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 items-center justify-center p-4 py-10 md:p-10">
+<div class="flex w-full max-w-md flex-col items-center gap-6 rounded-xl bg-card-light dark:bg-card-dark p-6 text-center shadow-lg md:p-8">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-icon-light/20 dark:bg-icon-dark/20 text-icon-light dark:text-icon-dark">
+<span class="material-symbols-outlined !text-4xl">schedule</span>
+</div>
+<div class="flex flex-col gap-2">
+<h1 class="text-heading-light dark:text-heading-dark text-2xl font-medium tracking-tight">Feedback Pending Review</h1>
+<p class="text-body-light dark:text-body-dark text-base font-normal leading-relaxed">
+                            Your professor is reviewing your interview. You'll receive a notification when feedback is available.
+                        </p>
+</div>
+<div class="flex w-full flex-col gap-3 pt-2">
+<div class="flex items-center gap-4 text-left">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-500 dark:text-emerald-400">
+<span class="material-symbols-outlined">done</span>
+</div>
+<p class="flex-1 truncate text-base font-normal leading-normal text-heading-light dark:text-heading-dark">Interview submitted on October 26th</p>
+</div>
+<div class="flex items-center gap-4 text-left">
+<div class="flex h-10 w-10 shrink-0 animate-pulse items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20 text-primary dark:text-blue-300">
+<span class="material-symbols-outlined">hourglass_top</span>
+</div>
+<p class="flex-1 truncate text-base font-normal leading-normal text-heading-light dark:text-heading-dark">Under review</p>
+</div>
+</div>
+<div class="flex w-full pt-4">
+<button class="flex h-12 w-full min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg border border-primary bg-transparent px-5 text-base font-medium leading-normal text-primary transition-colors hover:bg-primary/10 dark:hover:bg-primary/20">
+<span class="truncate">Return to Dashboard</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
